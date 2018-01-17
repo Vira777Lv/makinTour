@@ -1,11 +1,6 @@
 $( document ).ready(function () {
   $(".datepicker").datepicker({
-    showOn: 'both',
-    buttonText: 'Show Date',
     dateFormat: "dd.mm.yy",
-    buttonImageOnly: true,
-    buttonImage: 'img/calendar2.png',
-    isRTL: true,
     onSelect: function (d, i) {
       if (d !== i.lastVal) {
         $(this).change();
@@ -27,7 +22,7 @@ $( document ).ready(function () {
 // count of like
   $('.like').click(function() {
     let num = +$('.like').attr("count");
-    num = num + 1;
+    num += 1;
     $(".count-like").text(num);
     $('.like').attr('count', num);
   });

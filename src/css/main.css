@@ -157,6 +157,11 @@ header {
   align-items: center;
   margin: 60px 0 30px 180px;
 }
+
+.calendar:before {
+  content: url("../img/calendar2.png");
+}
+
 .calendar:after {
   content: url("../img/arr-down2.png");
 }
